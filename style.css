@@ -9,7 +9,8 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 20px;
 	line-height: 150%;
-	position: relative;
+	/*position: relative;*/
+	color: #2a2a2a;
 }
 div{
 	word-wrap: break-word;
@@ -24,11 +25,11 @@ div{
 }
 /*lead*/
 .lead{
-	height: 400px;
+	height: 435px;
 	width: inherit;
 	background-image: url("images/mew.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 85%;
 	position: relative;
 	margin-bottom: 0px;
 }
@@ -57,15 +58,18 @@ div{
 	padding-top: 50px;
 	padding-bottom: 75px;
 }
+.site-header 
 footer{
 	background-color: #CCB5FD;
 	display: flex;
 	align-content: space-around;
 	justify-content: center;
-	padding-top: 50px;
-	padding-bottom: 75px;
+	padding: 50px 25px 75px;
 }
 /*headers*/
+h1, h2, h3, h4, h5, h6{
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
 h1 {
 	text-align: center;	
 	font-size: 45px;
@@ -74,6 +78,9 @@ h1 {
 .subtitle{
 	font-size: 28px;
 	font-style: italic;
+}
+a{
+	text-decoration: none;
 }
 /*showcase*/
 .showcase {
@@ -185,7 +192,6 @@ article h2{
 figure{
 	flex: inline-block;
 	margin: 0;
-	max-width: 275px;
 }
 figcaption {
 	display: block;
@@ -214,11 +220,6 @@ img.alignleft {
 	margin: 0 7px 2px 0; 
 	display: inline; 
 }
-img.aligncenter { 
-	display:inline;
-	margin-left: auto; 		
-	margin-right: auto; 
-}
 .alignright { 
 	float: right; 
 	padding-left: 10px;
@@ -234,6 +235,11 @@ img.aligncenter {
 }
 .indent-left{
 	margin-left: 400px;
+}
+.center {
+	justify-content: center;
+    align-content: space-around;
+	text-align: center;
 }
 .rcorners {
   border-radius: 15px; 
