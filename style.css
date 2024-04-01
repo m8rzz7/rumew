@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document for RU Mew*/
+*{}
+
+body {
+	margin: 0;
+    padding: 0;
+	align-content: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	line-height: 150%;
+	position: relative;
+}
+div{
+	word-wrap: break-word;
+}
+.wrapper{
+    width: 90%;   
+	max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+	overflow: auto;
+    padding: 20px 40px;
+}
+/*lead*/
+.lead{
+	height: 500px;
+	width: inherit;
+	background-image: url("images/lead-bg.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	position: relative;
+}
+.primary-statement{
+	font-size: 48px;
+	position: absolute;
+	left: 30px;
+	top: 240px;
+}
+.secondary{
+	font-size: 25px;
+	position: relative;
+}
+.lead-display{
+	justify-content: center;
+	position: relative;
+}
+.spacing{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px 180px 50px;
+}
+/*header*/
+.site-header{
+	background-color: #D4E299;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 75px;
+}
+footer{
+	background-color: #CCB5FD;
+	display: flex;
+	align-content: space-around;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 75px;
+}
+/*headers*/
+h1 {
+	text-align: center;	
+	font-size: 55px;
+	line-height: 100%
+}
+/*showcase*/
+.showcase {
+
+}
+.showcase-container{
+
+}
+.showcase-item{
+
+}
+/*paragraphs*/
+p{
+	text-align: justify;
+}
+p img { /*image within a paragraph*/
+	padding: 0; 
+	max-width: 100%; 
+}
+p.caption{
+	font-size: 16px;
+	font-weight: 900;
+	margin-top: 5px;
+	padding: 0;
+	line-height: 50%;
+	text-align: center;
+}
+/*navigation*/
+nav{
+	/*text-align: center;
+	padding-bottom: 3px;
+	align-content: center;*/
+}
+.site-nav{
+	font-display: auto;
+	width: 100%;
+}
+.page-nav{
+	background: #9ca6ed;
+}
+/*flex*/
+.site-nav h2{
+	margin: 0;
+	padding: 0;
+}
+.flex{
+	display: flex;
+	flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    column-gap: 32px;
+	vertical-align: baseline;
+}
+@media (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+.flex a{
+	text-decoration: none;
+}
+.site-nav a, .page-nav a, footer a{
+	text-decoration: none;
+}
+/*links*/
+a:link {
+  color:#1E718E;
+}
+a:visited {
+  color: #082F3C;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color:aquamarine;
+}
+/*figure*/
+figure{
+	display: inline-block;
+}
+figurecaption {
+	display: block;
+	overflow-wrap: break-word;	
+	color: #273A3A;
+}
+div.block{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
+	max-block-size: 100%;
+	min-height: 200px;
+}
+/*alignment*/
+img.alignright { 
+	padding: 4px; 
+	margin: 0 0 2px 7px; 
+	display: inline; 
+}
+img.alignleft { 
+	padding: 4px; 
+	margin: 0 7px 2px 0; 
+	display: inline; 
+}
+img.aligncenter { 
+	display:inline;
+	margin-left: auto; 		
+	margin-right: auto; 
+}
+.alignright { 
+	float: right; 
+	padding-left: 5px;
+}
+.alignleft { 
+	float: left; 
+	padding-right: 5px;
+}
+.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.indent-left{
+	margin-left: 400px;
+}
+/*gallery*/
+.gallery{ 
+	text-align: center; 
+	margin:50px auto;
+}	
+.gallery figure{ 
+	margin:0px 20px;
+	display:inline-block;
+	/*text-decoration:none;
+	color:black;*/
+	text-overflow: inherit;
+	color: #273A3A;
+}
+/* gallery grid*/
+.gallery-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-row-gap: 20px ;
+	justify-items: center;
+	align-items: start;
+	justify-content: space-between;
+}
+.gallery-item {
+	width: 250px; /*should match the width of your images + width of border (if any) */
+	text-align: center;
+}     
+.gallery-item p {
+	margin: .25em 0;
+	line-height: 135%;
+	text-align: center;
+}
+/*icon CSS*/
