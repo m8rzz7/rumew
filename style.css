@@ -37,6 +37,7 @@ div{
 	position: absolute;
 	left: 30px;
 	top: 240px;
+	color: darkmagenta;
 }
 .secondary{
 	font-size: 25px;
@@ -62,7 +63,10 @@ footer{
 	display: flex;
 	align-content: space-around;
 	justify-content: center;
-	padding: 50px 25px 75px;
+	padding: 20px 35px 20px;
+}
+footer p{
+	text-align: center;
 }
 /*headers*/
 h1, h2, h3, h4, h5, h6{
@@ -73,13 +77,33 @@ h1 {
 	font-size: 45px;
 	line-height: 100%
 }
-.subtitle{
+#coming{
+	font-size: 60px;
+	font-style: italic;
+	line-height: 200%;
+	color: cornflowerblue;
+}
+.subheader{
 	font-size: 28px;
 	font-style: italic;
 }
-.main-header{
-	color: #6E277C;
+.subtitle{
+	margin-top: 0;
+	font-size: 28px;
+	text-align: center;
+	color: #656565;
+	font-style: italic;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
+.main-header{
+	font-size: 50px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+.ru-title{
+	padding-bottom: 10px;
+}
+
 /*showcase*/
 .showcase {
 
@@ -95,7 +119,15 @@ h1 {
 .showcase-item{
 	display: run-in;
 }
-
+#cam-photo{
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.disclaimer{
+	background-color: red;
+	color: white;
+	
+}
 /*about css*/
 .profile-group h2{
 	margin-bottom: 0;
@@ -199,12 +231,32 @@ b
 	font-style: italic;
 	color:#2E2E2E;
 	font-size: 20px;
+	display: inline;
 }
 .article-container{
-	display: grid;
-	grid-template-columns: auto 2fr;
-	gap: 2rem 4rem; /*2rem between rows, 4rem between cols*/
+	display: flex;
+	gap: 2rem;
 	align-items: center;
+	/*display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"r1pic r1par r1par"
+		"r2par r2par r2pic";
+	margin-bottom: 0;
+	margin-top: 0;*/
+}
+.rev1-pic{
+	grid-area: r1pic;
+}
+.rev1-para{
+	grid-area: r1par;
+}
+.rev2-pic{
+	grid-area: r2pic;	
+}
+.rev2-para{
+	grid-area: r2par;
 }
 /*paragraphs*/
 p{
@@ -224,6 +276,9 @@ p.caption{
 }
 .pic-para{
 	display: block;
+}
+#mew-em{
+	color: cornflowerblue;
 }
 /*navigation*/
 nav{
@@ -310,10 +365,6 @@ article h2{
 figure{
 	flex: inline-block;
 	margin: 0;
-	max-width: 400px;
-}
-figure img{
-	max-width: 400px;
 }
 figcaption {
 	display: block;
@@ -338,11 +389,11 @@ img.alignleft {
 }
 .alignright { 
 	float: right; 
-	padding-left: 10px;
+	padding-left: 20px;
 }
 .alignleft { 
 	float: left; 
-	padding-right: 10px;
+	padding-right: 20px;
 }
 .aligncenter { 
 	display: block; 
@@ -361,141 +412,29 @@ img.alignleft {
   border-radius: 15px; 
 } 
 /*gallery*/
-.gallery{ 
-	text-align: center; 
-	margin:50px auto;
+.flex-gallery{
 	display: flex;
 	flex-flow: wrap;
-    flex-direction: row;
+	flex-direction: row;
+	flex-basis: auto;
+	flex-shrink: 3;
+	grid-auto-flow: row;
+	flow-from: column;
     justify-content: center;
     align-content: space-around;
     column-gap: 32px;
-	vertical-align: baseline;
-}	
-.gallery figure{ 
-	margin:0px 20px;
-	display:inline-block;
-	/*text-decoration:none;
-	color:black;*/
-	text-overflow: inherit;
-	color: #273A3A;
+	margin-top: 20px;
 }
-/* gallery grid*/
-.gallery-grid {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-row-gap: 20px ;
-	justify-items: center;
-	align-items: start;
-	justify-content: space-between;
+.flex-gallery figure{
+	width: 200px;
+	height: auto;
 }
-.gallery-item {
-	width: 250px; /*should match the width of your images + width of border (if any) */
-	text-align: center;
-}     
-.gallery-item p {
-	margin: .25em 0;
-	line-height: 135%;
-	text-align: center;
+#mew-tree{
+	max-width: 90%;
+	max-height: 90%;
 }
-/* dynamic grid CSS*/
-/*.row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	max-width: 900px;
-}*/
-
-/* Create two equal columns that sits next to each other */
-/*.column {
-	flex: 50%;
-	padding: 0 4px;
-	max-width: 900px;
-}
-
-.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: inherit;
-	max-width: 900px;
-}*/
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 px;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-	-ms-flex: 50%; /* IE 10 */
-	flex: 50%;
-	padding: 0;
-	max-width: 75%;
-}
-@media (max-width: 900px) {
-  .column {
-    max-width: 45%;
+@media (max-width: 800px) {
+  #mew-tree {
+    max-width: 90%;
   }
 }
-.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	max-width: inherit;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn:active {
-  background-color: #666;
-  color: white;
-}
-
-/* Create four equal columns that sits next to each other */
-/*.column {
-  flex: 25%;
-  max-width: 30%;
-  padding: 0 4px;
-}
-
-.column figure {
-	margin-top: 8px;
-	vertical-align: middle;
-	justify-content: space-around;
-	width: 100%;
-}
-
-.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	justify-content: space-around;
-	width: 100%;
-}*/
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-/*@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}*/
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/*@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}*/

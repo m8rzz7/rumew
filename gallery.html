@@ -5,9 +5,7 @@
 	<meta charset="utf-8">
 	<title>Gallery</title>
 	<link rel="stylesheet" href="style.css">
-	<!-- ADD SITE LOGO!!!
-	<link rel="icon" type="image/x-icon" href="images/site-icon.png">
-	-->
+	<link rel="icon" type="image/x-icon" href="images/SVG/site-logo.svg">
 
 </head>
 
@@ -28,133 +26,69 @@
 		
 	<main>
 		<section class="lead spacing">
-			
-			<h1 class = "primary-statement">primary statement</h1>
-			<p class="secondary">secondary statement</p>
+			<h1 class = "primary-statement">mew reviews of RU</h1>
+			<p class="secondary">this site is <em>NOT</em> affiliated with Rutgers University-New Brunswick or Pok&#233;mon&trade;</p>
 			
 			<div class="lead-display">
-				<p>about my site</p>
-				lorem ipsum dolor sit amet,<br>
-				consectetur adipiscing elit, sed do 
+				<p></p> 
 			</div><!--end of lead-display-->
 		</section>
+		<section class="ru-title">
+			<img src="images/SVG/rumew.svg" height="100px" alt="large red letters spelling out RU Mew" class="aligncenter">
+			<h1 class="main-header">photo gallery</h1>
+		</section><!--end of ru-title-->
 		
 		<section class="showcase">
-			<h1 class="main-header">Gallery</h1>
-			
-			<!--
-			<div id="buttons">
-				<button class="btn" onclick="one()" id="one">1</button>
-				<button class="btn" onclick="two()" id="two">2</button>
-				<button class="btn" onclick="four()" id="four">4</button>
-			</div>
-			-->
 
-			<script>
-			// Get the elements with class="column"
-			var elements = document.getElementsByClassName("column");
-			
-				document.getElementById("one").onclick = function() {one()};
-				
-				document.getElementById("two").onclick=function( ) {two()};
-				
-				document.getElementById("four").onclick=function() {four()};
-				
-			// Declare a loop variable
-			var i;
-
-			// Full-width images
-			function one() {
-				for (i = 0; i < elements.length; i++) {
-				elements[i].style.msFlex = "100%";  // IE10
-				elements[i].style.flex = "100%";
-			  }
-			}
-
-			// Two images side by side
-			function two() {
-			  for (i = 0; i < elements.length; i++) {
-				elements[i].style.msFlex = "50%";  // IE10
-				elements[i].style.flex = "50%";
-			  }
-			}
-
-			// Four images side by side
-			function four() {
-			  for (i = 0; i < elements.length; i++) {
-				elements[i].style.msFlex = "25%";  // IE10
-				elements[i].style.flex = "25%";
-			  }
-			}
-
-			// Add active class to the current button (highlight it)
-			var header = document.getElementById("main-header");
-			var btns = header.getElementsByClassName("btn");
-			for (var i = 0; i < btns.length; i++) {
-			  btns[i].addEventListener("click", function() {
-				var current = document.getElementsByClassName("active");
-				current[0].className = current[0].className.replace(" active", "");
-				this.className += " active";
-			  });
-			}
-			</script>
-			
-			<div class="row center">
-				
-				<div class="column">
-						<img src="images/tea1.jpg" alt="picture"/>
-						<img src="images/mew-radreads.jpeg" alt="picture"/>
-						<img src="images/mew-smoothie.jpg" alt="mew next to purple smoothie"/>
-						<img src="images/khyber.jpg" alt="picture"/>
-						<img src="images/harvest1.jpg" alt="picture"/>
-				</div><!--end of column1-->
-				<div class="column">
-						<img src="images/mew-tree.jpeg" alt="picture"/>
-						<img src="images/bug-sticker.jpg" alt="picture"/>
-						<img src="images/tea2.jpg" alt="picture"/>
-						<img src="images/comp-mew.jpg" alt="picture"/>
-						
-				</div><!--end of column2-->
-			</div><!--row ends-->
-			
 			<div class="flex-gallery">
+				
 				<figure>
-					<img src="images/tea2.jpg" alt="picture" height="150px"/>
+					<img src="images/tea2.jpg" alt="picture" width="200px"/>
 					<figcaption>chai from khyber</figcaption>
 				</figure><!--figure ends-->
 				<figure>
-					<img src="images/harvest1.jpg" alt="picture" height="200px"/>
+					<img src="images/tea1.jpg" alt="tea pot with two cups of chair and a small vase of flowers" width="200px"/>
+					<figcaption>chai from khyber</figcaption>
+				</figure><!--figure ends-->
+				<figure>
+					<img src="images/khyber.jpg" alt="inside of khyber coffee and tea" width="200px"/>
+					<figcaption>inside of khyber</figcaption>
+				</figure><!--figure ends-->	
+				
+				
+				<figure>
+					<img src="images/bug-sticker.jpg" alt="picture" width="200px"/>
+					<figcaption>animal sticker</figcaption>
+				</figure><!--figure ends-->	
+				
+				<figure>
+					<img src="images/harvest1.jpg" alt="picture" width="200px"/>
 					<figcaption>harvest cafe meal</figcaption>
 				</figure><!--figure ends-->
 				<figure>
-					<img src="images/bug-sticker.jpg" alt="picture" height="200px"/>
-					<figcaption>bug sticker on c/d</figcaption>
-				</figure><!--figure ends-->	
-				<figure>
-					<img src="images/tea1.jpg" alt="picture"/>
-					<figcaption>chai from khyber</figcaption>
+					<img src="images/mew-smoothie.jpg" alt="mew next to purple smoothie" width="200px"/>
+					<figcaption>harvest cafe smoothie</figcaption>
 				</figure><!--figure ends-->
+				
 				<figure>
-					<img src="images/mew-radreads.jpeg" alt="picture"/>
+					<img src="images/mew-radreads.jpeg" alt="radical readings book club group photo with mew at the bottom right" width="200px"/>
 					<figcaption>radical reads book club</figcaption>
-				</figure><!--figure ends-->	
+				</figure><!--figure ends-->
+				
 				<figure>
-					<img src="images/mew-tree.jpeg" alt="picture"/>
-					<figcaption>voorhees mall tree</figcaption>
-				</figure><!--figure ends-->			
-				<figure>
-					<img src="images/khyber.jpg" alt="picture"/>
-					<figcaption>inside of khyber</figcaption>
-				</figure><!--figure ends-->	
-				<figure>
-					<img src="images/comp-mew.jpg" alt="picture"/>
+					<img src="images/comp-mew.jpg" alt="mew on top of a laptop" width="200px"/>
 					<figcaption>mew computing</figcaption>
 				</figure><!--figure ends-->
-				<figure>
-					<img src="images/mew-smoothie.jpg" alt="mew next to purple smoothie"/>
-					<figcaption>harvest cafe smoothie</figcaption>
-				</figure><!--figure ends-->	
+				
+					
+	
 			</div><!--ends of flex gallery-->
+			
+			<figure class="center">
+				<img src="images/mew-tree.jpeg" alt="mew resting on a tree branch"  id="mew-tree"/>
+				<figcaption>voorhees mall tree</figcaption>
+			</figure><!--figure ends-->	
+			
 			
 			<h2>Our Photographer</h2>
 			<figure class="alignleft">
@@ -170,7 +104,12 @@
 	
 	</div><!--wrapper ends-->
 	<footer>
-		<p>&copy; 2024 your <a href="https://m8rzz7.github.io/" target="_blank">Marz Pino</a>. All rights reserved.</p>
+		<p>&copy; 2024 your <a href="https://m8rzz7.github.io/" target="_blank">Marz Pino</a>. All rights reserved.
+		<br><br>
+		This site is <em>NOT</em> officially affiliated with Rutgers University-New Brunswick or Pok&#233;mon&trade;, and does not profit off of the likeness of these entities.
+		<br><br>
+		01:355:435 Final Project, Spring 2024
+		</p>
 	</footer>
 </body>
 </html>
