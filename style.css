@@ -26,22 +26,26 @@ div{
 .lead{
 	height: 435px;
 	width: inherit;
-	background-image: url("images/mew.png");
+	background-image: url("images/mew-sign.jpg");
 	background-repeat: no-repeat;
-	background-size: 85%;
+	background-size: 100%;
 	position: relative;
 	margin-bottom: 0px;
 }
 .primary-statement{
 	font-size: 50px;
 	position: absolute;
-	left: 30px;
-	top: 240px;
-	color: darkmagenta;
+	right: 50px;
+	top: 260px;
+	color: cornflowerblue;
+	text-shadow: #273A3A;
 }
 .secondary{
 	font-size: 25px;
+	color: #12576f;
 	position: relative;
+	text-align: center;
+	font-weight: bold;
 }
 .lead-display{
 	justify-content: center;
@@ -149,6 +153,7 @@ h1 {
 	gap: 1rem 2rem; 
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto;
+	align-items: center;
 	grid-template-areas:
 		"mewp mewb mewb"
 		"psyb psyb psyp"
@@ -160,10 +165,27 @@ h1 {
 		"jirap jirab mudp";*/
 }
 .profile-port{
-	background-color: darkcyan;
+	/*background-color: darkcyan;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px; 
+}
+.profile-container-3 .profile-port{
+	/*background-color: rgb(187, 227, 239);*/
+}
+.profile-container-3 .profile-bio{
+	background-color: rgb(187, 227, 239);
+	/*background-color: #c9ece2;*/
+	border-radius: 15prgb(199, 229, 204)
+	border: 5px solid;
+	border-color: rgb(187, 227, 239);
+	/*border-color: #c9ece2;*/
 }
 .profile-bio{
 	background-color: orange;
+	border-radius: 15px; 
+	border: 5px solid orange;
 }
 .profile-bio p{
 	margin-top: 0;
@@ -201,6 +223,7 @@ b
 	gap: 1rem 2rem; 
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto;
+	align-items: center;
 	grid-template-areas:
 		"c1p c1b c1b"
 		"c2b c2b c2p";
