@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document for RU Mew*/
 *{}
-
 body {
 	margin: 0;
     padding: 0;
@@ -57,7 +56,7 @@ div{
 }
 /*header*/
 .site-header{
-	background-color: #D4E299;
+	background-color: #cfeb8d; /* old color: #D4E299 */
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 75px;
@@ -74,7 +73,7 @@ footer p{
 }
 /*headers*/
 h1, h2, h3, h4, h5, h6{
-	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-family: "Franklin Gothic Bold", "Arial Black";
 }
 h1 {
 	text-align: center;	
@@ -121,7 +120,14 @@ h1 {
 	vertical-align: baseline;
 }
 .showcase-item{
-	display: run-in;
+	display: flex;
+	flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+	vertical-align: middle;
+    column-width: 250px;
+	max-width: 250px;
 }
 #cam-photo{
 	padding-top: 15px;
@@ -148,6 +154,7 @@ h1 {
 	gap: 2rem 4rem; /*2rem between rows, 4rem between cols*/
 	align-items: center;
 }
+/*grid display for team profiles*/
 .profile-container-3{
 	display: grid;
 	gap: 1rem 2rem; 
@@ -171,27 +178,22 @@ h1 {
 	align-items: center;
 	border-radius: 15px; 
 }
-.profile-container-3 .profile-port{
-	/*background-color: rgb(187, 227, 239);*/
-}
 .profile-container-3 .profile-bio{
 	background-color: rgb(187, 227, 239);
-	/*background-color: #c9ece2;*/
-	border-radius: 15prgb(199, 229, 204)
+	/*rgb(199, 229, 204);*/
+	border-radius: 15px; 
 	border: 5px solid;
 	border-color: rgb(187, 227, 239);
-	/*border-color: #c9ece2;*/
 }
-.profile-bio{
-	background-color: orange;
+.profile-container-4 .profile-bio{
 	border-radius: 15px; 
+	background-color: orange;
 	border: 5px solid orange;
 }
 .profile-bio p{
-	margin-top: 0;
+	margin: 0px 5px;
 }
-
-
+/*grid area code names for tesma*/
 .mew-port{
 	grid-area: mewp;
 }
@@ -205,7 +207,6 @@ b
 .psy-bio{
 	grid-area: psyb;
 }
-
 .jira-port{
 	grid-area: jirap;
 }
@@ -218,6 +219,8 @@ b
 .mud-bio{
 	grid-area: mudb;
 }
+
+/*grid display for collaborations*/
 .profile-container-4{
 	display: grid;
 	gap: 1rem 2rem; 
@@ -232,7 +235,7 @@ b
 		"jirab mudp mudb"
 		"jirap jirab mudp";*/
 }
-
+/*grid area code names for collabs*/
 .c1-port{
 	grid-area: c1p;
 }
@@ -245,8 +248,8 @@ b
 .c2-bio {
 	grid-area: c2b;
 }
-/*review stuff*/
 
+/*review stuff*/
 .rev-title{
 	font-size: 40px;
 }
@@ -257,37 +260,15 @@ b
 	display: inline;
 }
 .article-container{
-	display: flex;
-	gap: 2rem;
+	display: block;
 	align-items: center;
-	/*display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-		"r1pic r1par r1par"
-		"r2par r2par r2pic";
-	margin-bottom: 0;
-	margin-top: 0;*/
-}
-.rev1-pic{
-	grid-area: r1pic;
-}
-.rev1-para{
-	grid-area: r1par;
-}
-.rev2-pic{
-	grid-area: r2pic;	
-}
-.rev2-para{
-	grid-area: r2par;
+	justify-content: center;
+    align-content: space-around;
+	vertical-align: middle;
 }
 /*paragraphs*/
 p{
 	font-size: 20px;
-}
-p img { /*image within a paragraph*/
-	padding: 0; 
-	max-width: 100%; 
 }
 p.caption{
 	font-size: 16px;
@@ -303,6 +284,7 @@ p.caption{
 #mew-em{
 	color: cornflowerblue;
 }
+
 /*navigation*/
 nav{
 	text-align: center;
@@ -318,6 +300,34 @@ nav{
     column-gap: 32px;
 	vertical-align: baseline;
 	padding-top: 25px;
+	font-size: 25px;
+	line-height: 150%;
+	font-weight: bold;
+}
+/*dropdown navigation*/
+.dropdown{
+	position: relative;
+	display: inline;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #d0e7f7;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+	display: flex;
+	flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    column-gap: 25px;
+	row-gap: 25px;
+	vertical-align: baseline;
+	padding-top: 25px;
 }
 
 /*site navigation*/
@@ -328,6 +338,10 @@ nav{
 .site-nav h2{
 	margin: 0;
 	padding: 0;
+}
+.site-nav a{
+	font-size: 20px;
+	font-weight: bold;
 }
 .site-nav a, .page-nav a, footer a{
 	text-decoration: none;
@@ -341,6 +355,7 @@ nav{
 .site-nav a:active{
 	 color: aquamarine;
 }
+
 /*links*/
 a{
 	text-decoration: none;
@@ -376,7 +391,15 @@ a:active {
 .flex a{
 	text-decoration: none;
 }
-/*article*/
+
+/*article CSS*/
+article{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 article a{
 	text-decoration: none;
 }
@@ -384,19 +407,40 @@ article h2{
 	font-size: 40px;
 	text-align: left;
 }
-/*figure*/
+/*figure CSS*/
 figure{
+	display: inline;
+	align-items: center;
 	flex: inline-block;
 	margin: 0;
+}
+figure img{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	justify-content: center;
+    align-content: space-around;
 }
 figcaption {
 	display: block;
 	overflow-wrap: break-word;	
-	color: #273A3A;
+	align-self: center;
 	text-align: center;
-	font-weight: 900;
+	color: #1a5b3a;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
 	font-size: 17px;
-	max-width: inherit;
+	max-width: 200px;
+}
+.credit{
+	padding-top: 5px;
+	font-weight: normal;
+	color: rgb(99, 98, 98);
+	font-style: italic;
+	font-size: 15px;
+}
+#mew-tree{
+	max-width: 900px;
 }
 
 /*alignment*/
@@ -434,6 +478,7 @@ img.alignleft {
 .rcorners {
   border-radius: 15px; 
 } 
+
 /*gallery*/
 .flex-gallery{
 	display: flex;
@@ -445,8 +490,10 @@ img.alignleft {
 	flow-from: column;
     justify-content: center;
     align-content: space-around;
+	align-items: center;
     column-gap: 32px;
 	margin-top: 20px;
+	vertical-align: middle;
 }
 .flex-gallery figure{
 	width: 200px;
@@ -455,6 +502,9 @@ img.alignleft {
 #mew-tree{
 	max-width: 90%;
 	max-height: 90%;
+}
+.gallery-title{
+
 }
 @media (max-width: 800px) {
   #mew-tree {
