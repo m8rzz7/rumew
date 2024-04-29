@@ -1,0 +1,49 @@
+food
+- harvest
+    address: 61 Dudley Rd, New Brunswick, NJ 08901
+    coordinates: 40.479425, -74.436339
+    site: https://ifnh.rutgers.edu/harvest.html
+
+- khyber coffee & tea
+    address: 110 Church St, New Brunswick, NJ 08901
+    coordinates: 40.495790,-74.444540
+    site: https://www.drinkkhyber.com/
+
+- ru grill & pizza
+    address: 142 Easton Ave, New Brunswick, NJ 08901
+    coordinates: 40.49941, -74.45321
+    site: https://www.rugrillandpizzanj.com/
+
+
+entertainment
+- radical reads
+    address: 600 Bartholomew Rd, Piscataway, NJ 08854
+    coordinates: 40.523935, -74.458939
+    site: https://prcc.rutgers.edu/
+
+- spina records
+    address: 118 Easton Ave, New Brunswick, NJ 08901
+    coordinates: 40.49907, -74.452343
+    site: https://www.spinarecords.com/ 
+
+- ru cinema
+    address: 105 Joyce Kilmer Ave, Piscataway, NJ 08854
+    coordinates: 40.525388, -74.437366
+    site: https://www.rutgerscinema.com/
+
+
+nature
+- passion puddle
+    address: 71 Lipman Dr, New Brunswick, NJ 08901
+    coordinates: 40.482662, -74.437108
+    site: https://www.rutgers.edu/news/rutgers-passion-puddle-among-americas-most-romantic-college-spots 
+
+- hiking trail
+    address: 83 Rockafeller Rd, Piscataway, NJ 08854
+    coordinates: 40.521028, -74.441704
+    site: https://ecopreserve.rutgers.edu/
+
+- climbable trees
+    address: 71 Hamilton St, New Brunswick, NJ 08901
+    coordinates: 40.500712, -74.447338
+    site: https://www.rutgers.edu/news/voorhees-mall-site-commencement-rich-rutgers-history
