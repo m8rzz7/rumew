@@ -22,7 +22,9 @@ div {
   margin-right: auto;
   overflow: auto;
   padding: 20px 40px;
-}
+} 
+
+
 /*lead*/
 .lead {
   height: 435px;
@@ -447,7 +449,7 @@ figcaption {
   font-style: italic;
   font-size: 15px;
 }
-#mew-tree {
+#mew-tree, #turtle {
   max-width: 900px;
 }
 
@@ -500,8 +502,14 @@ img.alignleft {
   align-content: space-around;
   align-items: center;
   column-gap: 32px;
+  row-gap: 10px;
   margin-top: 20px;
   vertical-align: middle;
+}
+@media (max-width: 800px) {
+  .flex-gallery{
+    width: 100%;
+  }
 }
 .flex-gallery figure {
   width: 200px;
@@ -511,75 +519,22 @@ img.alignleft {
   max-width: 90%;
   max-height: 90%;
 }
+#turtle{
+  padding-top: 10px;
+}
 .gallery-title {
+
 }
 @media (max-width: 800px) {
-  #mew-tree {
+  #mew-tree, #turtle {
     max-width: 90%;
   }
 }
 
 /*interactive map CSS*/
-.worldmap {
-  width: 900px;
-  height: 450px;
-  border: solid #5a5a5a 1px;
-  background: url(images/SVG/world-map.svg) no-repeat;
-  /*background-size: 900px 600px;*/
-  background-size: 100%;
-  background-position: center;
-  padding: 0;
-  margin: 0; /* adjust as needed */
-  position: relative; /* needed for positioning the icons */
-}
-
-.worldmap-item {
-  height: 20px;
-  position: absolute;
-}
-
-#worldmap-item-bowl {
-  top: 250px;
-  left: 230px;
-}
-#worldmap-item-mug {
-  top: 200px;
-  right: 255px;
-}
-#worldmap-item-pizza {
-  top: 125px;
-  left: 465px;
-}
-
-
-#worldmap-item-book {
-  top: 250px;
-  left: 490px;
-}
-#worldmap-item-record {
-  top: 125px;
-  right: 160px;
-}
-#worldmap-item-film {
-  bottom: 100px;
-  right: 100px;
-}
-
-#worldmap-item-bug {
-  top: 75px;
-  left: 175px;
-}
-#worldmap-item-hike {
-  top: 390px;
-  left: 280px;
-}
-#worldmap-item-tree {
-  top: 130px;
-  left: 235px;
-}
-
 #map-div{
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: 600px;
   border: solid #bababa 1px;
 }
@@ -597,6 +552,12 @@ img.alignleft {
 #nat-title{
   background-color: rgb(254, 124, 146);
   color: whitesmoke;
+}
+
+.list-col{
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
 }
 
 /* visual essay CSS */

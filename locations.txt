@@ -39,7 +39,7 @@ nature
     site: https://www.rutgers.edu/news/rutgers-passion-puddle-among-americas-most-romantic-college-spots 
 
 - hiking trail
-    address: 83 Rockafeller Rd, Piscataway, NJ 08854
+    address: 100 Rockafeller Rd, Piscataway, NJ 08854
     coordinates: 40.521028, -74.441704
     site: https://ecopreserve.rutgers.edu/
 
