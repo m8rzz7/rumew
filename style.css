@@ -125,7 +125,7 @@ h1 {
   flex-flow: wrap;
   flex-direction: row;
   align-content: space-around;
-  column-gap: 32px;
+  column-gap: 10px;
   vertical-align: baseline;
 }
 .showcase-item {
@@ -135,13 +135,31 @@ h1 {
   justify-content: center;
   align-content: center;
   vertical-align: middle;
-  column-width: 250px;
-  max-width: 250px;
+  column-width: 280px;
+  max-width: 280px;
+}
+.showcase-item figure img, .showcase-item figure img{
+  width: 280px;
 }
 #cam-photo {
   padding-top: 15px;
   padding-bottom: 20px;
+  width: 255px;
 }
+@media (max-width: 800px) {
+  #cam-photo {
+    width: 160px;
+  }
+  .showcase-item{
+    column-width: 200px;
+    max-width: 200px;
+  }
+  .showcase-item figure img, .showcase-item figure img{
+    width: 200px;
+  }
+  
+}
+
 .disclaimer {
   background-color: red;
   color: white;
@@ -312,11 +330,11 @@ nav {
   font-weight: bold;
 }
 /*dropdown navigation*/
-.dropdown {
+.dropdown, .nested-dropdown{
   position: relative;
   display: inline;
 }
-.dropdown-content {
+.dropdown-content, .nested-dropdown-content {
   display: none;
   position: absolute;
   background-color: #d0e7f7;
@@ -325,7 +343,22 @@ nav {
   padding: 12px 16px;
   z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  column-gap: 25px;
+  row-gap: 25px;
+  vertical-align: baseline;
+  padding-top: 25px;
+}
+.dropdown:hover .nested-dropdown-content{
+  display: none;
+}
+.nested-dropdown:hover .nested-dropdown-content{
   display: flex;
   flex-flow: wrap;
   flex-direction: row;
@@ -440,7 +473,6 @@ figcaption {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   font-size: 17px;
-  max-width: 200px;
 }
 .credit {
   padding-top: 5px;
@@ -449,9 +481,7 @@ figcaption {
   font-style: italic;
   font-size: 15px;
 }
-#mew-tree, #turtle {
-  max-width: 900px;
-}
+
 
 /*alignment*/
 img.alignright {
@@ -501,24 +531,45 @@ img.alignleft {
   justify-content: center;
   align-content: space-around;
   align-items: center;
-  column-gap: 32px;
+  column-gap: 10px;
   row-gap: 10px;
   margin-top: 20px;
-  vertical-align: middle;
+  vertical-align: baseline;
+}
+#exploring {
+  column-gap: 20px;
+  width: 100%;
+}
+#exploring figure img, #exploring figure figcaption{
+  width: 210px;
+}
+
+#mew-tree, #turtle, .vis-ess img{
+  max-width: 900px;
 }
 @media (max-width: 800px) {
   .flex-gallery{
     width: 100%;
   }
 }
-.flex-gallery figure {
-  width: 200px;
+.flex-gallery figure{
+  vertical-align: top;
+}
+
+.flex-gallery figure img, .flex-gallery figure figcaption {
+  width: 293px;
   height: auto;
 }
-#mew-tree {
-  max-width: 90%;
-  max-height: 90%;
+@media (max-width: 800px) {
+  .flex-gallery figure {
+  width: 200px;
+  height: auto;
+  }
+  .flex-gallery figure img, .flex-gallery figure figcaption {
+    width: 200px;
+  }
 }
+
 #turtle{
   padding-top: 10px;
 }
@@ -526,8 +577,8 @@ img.alignleft {
 
 }
 @media (max-width: 800px) {
-  #mew-tree, #turtle {
-    max-width: 90%;
+  #mew-tree, #turtle, .vis-ess img {
+    max-width: 100%;
   }
 }
 
@@ -594,5 +645,14 @@ p.pola-cap {
 .grid-pola {
   display: grid;
   grid-template-columns: auto auto;
+}
+
+em.red{
+  font-style: normal;
+  color: crimson;
+}
+em.green{
+  font-style: normal;
+  color:darkolivegreen;
 }
 /* extra page CSS */

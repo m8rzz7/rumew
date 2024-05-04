@@ -14,11 +14,52 @@
 		<nav class="site-nav flex">
 			<a href="./"><h2>RU MEW</h2></a>
 			<a href="./">home</a>
-			<a href="./reviews">reviews</a>
-			<a href="./gallery">gallery</a>
-			<a href="./about">about</a>
 			<div class="dropdown">
-				<span><a href="./extra">extra</a></span>
+				<span><a href="./reviews">mew reviews</a></span>
+				<div class="dropdown-content">
+					<a href="./rev1">first review</a>
+					<a href="./rev2">latest review</a>
+					<a href="./reviews#micros">mirco-reviews</a>
+				</div>
+			</div><!--end of 'reviews'-->
+			<div class="dropdown">
+				<span><a href="./gallery">photography</a></span>
+				<div class="dropdown-content">
+					<a href="./gallery">gallery</a>
+					<a href="./essay">visual essay</a>
+				</div>
+			</div><!--end of 'photos'--> 
+			
+			<div class="dropdown">
+				<span><a href="./about">about us</a></span>
+				<div class="dropdown-content">
+					<div class="nested-dropdown">
+						<span><a href="#what">what is ru mew?</a></span>
+						<div class="nested-dropdown-content">
+							<a href="#history">history</a>
+							<a href="#why">why ru mew?</a>
+						</div>
+					</div><!--end of 'what' dropdown-->
+					<div class="nested-dropdown">
+						<span><a href="#team">meet our team</a></span>
+						<div class="nested-dropdown-content">
+							<a href="#mew">mew</a>
+							<a href="#oshawott">oshawott</a>
+							<a href="#jirachi">jirachi</a>
+							<a href="#snorlax">snorlax</a>
+						</div>
+					</div><!--end of 'our team' dropdown-->
+					<div class="nested-dropdown">
+						<span><a href="#collabs">collabs</a></span>
+						<div class="nested-dropdown-content">
+							<a href="#steve">sheriff steve</a>
+							<a href="#connie">connie the cat</a>
+						</div>
+					</div><!--end of 'collabs' dropdown-->
+				</div>
+			</div><!--end of 'about'-->
+			<div class="dropdown">
+				<span><a href="./extra">more mew</a></span>
 				<div class="dropdown-content">
 					<a href="./extra">mewvie</a>
 					<a href="./map">map</a>
@@ -46,93 +87,114 @@
 			<h1 class="main-header" id="gal">photo gallery</h1>
 		</section><!--end of ru-title-->
 		
+		<nav class="page-nav">
+			<a href="#khyber">khyber photos</a>
+			<a href="#harvest">harvest cafe</a>
+			<a href="#campuses">different campuses</a>
+			<a href="#passpud">passion puddle</a>
+			<a href="#vis">visual essay</a>
+		</nav><!--end of page nav-->
+
 		<section class="showcase">
-
-			<div>
-				<h2 id="khyber" class="gallery-title">inside of khyber coffee &#38; tea</h2>
-				<p>
-					Khyber Coffee &#38; Tea is a cozy cafe located in downtown New Brunswick. I took these photos when visiting. The first two photos are of a small pot of hot chai, served with two petite glass cups. Interestingly, the kettle is placed on a metal circle that holds a candle underneath it, to maintain heat. For more details on Khyber, you can read my review of it <a href="./rev2">here</a>.
-				</p>
-				<div class="flex-gallery">
-					<figure>
-						<img src="images/tea2.jpg" alt="bird's eye view of a tea pot with two cups of chair and a small vase of flowers" width="200px" />
-						<figcaption>chai from khyber</figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/tea1.jpg" alt="tea pot with two cups of chair and a small vase of flowers" width="200px"/>
-						<figcaption>chai from khyber</figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/khyber.jpg" alt="inside of khyber coffee and tea" width="200px"/>
-						<figcaption>inside of khyber</figcaption>
-					</figure><!--figure ends-->	
-				</div><!--end of khyber-->
-
-				<h2 id="harvest" class="gallery-title">phone eats first at harvest cafe</h2>
-				<p>
-					<a href="https://ifnh.rutgers.edu/harvest.html" target="_blank">Harvest Cafe</a> is a cafeteria located on Douglas Campus in the <a href="https://maps.rutgers.edu/#/?click=true&selected=6432" target="_blank">Institute for Food Nutrition and Health</a>. The food here is made fresh and right in front of you! The chefs exhibit their culinary talents here on a daily basis. Harvest offers a wide variety of delicious food from a frequently changing menu, ranging from noodle soups to freshly made smoothies. There are also prepackaged fresh sandwiches that you can take home to enjoy later. One meal swipe can get you an entrée with a side and a drink, or a smoothie with a side. Not only is the food from Harvest Cafe incredibly delicious, it is also quite aesthetically pleasing! The first image is from my first time at Harvest Cafe. I got <a href="https://www.cookwithmanali.com/palak-paneer/" target="_blank">palak paneer</a> as my entrée, with a chocolate cookie as my side and iced coffee to drink. My second meal at Harvest was lentils and rice, with an oatmeal raisin cookie and passion fruit iced tea. During my second visit, I also got the purple sky smoothie, which contains lots of berries and antioxidants.
-				</p>
-				<div class="flex-gallery">
-					
-					<figure>
-						<img src="images/harvest1.jpg" alt="bowl of palak paneer" width="200px"/>
-						<figcaption>harvest cafe meal</figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/harvest2.jpg" alt="bowl of lentils and chicken" width="200px"/>
-						<figcaption>harvest cafe meal</figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/mew-smoothie.jpg" alt="mew next to purple smoothie" width="200px"/>
-						<figcaption>harvest cafe smoothie</figcaption>
-					</figure><!--figure ends-->
-				</div><!--end of harvest-->
+			
+			<div><!--gallery-->
+				<section> <!--khyber-->
+					<h2 id="khyber" class="gallery-title">inside of khyber coffee &#38; tea</h2>
+					<p>
+						Khyber Coffee &#38; Tea is a cozy cafe located in downtown New Brunswick. I took these photos when visiting. The first two photos are of a small pot of hot chai, served with two petite glass cups. Interestingly, the kettle is placed on a metal circle that holds a candle underneath it, to maintain heat. For more details on Khyber, you can read my review of it <a href="./rev2">here</a>.
+					</p>
+					<div class="flex-gallery">
+						<figure>
+							<img src="images/tea2.jpg" alt="bird's eye view of a tea pot with two cups of chair and a small vase of flowers" width="200px" />
+							<figcaption>chai from khyber</figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/tea1.jpg" alt="tea pot with two cups of chair and a small vase of flowers" width="200px"/>
+							<figcaption>chai from khyber</figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/khyber.jpg" alt="inside of khyber coffee and tea" width="200px"/>
+							<figcaption>inside of khyber</figcaption>
+						</figure><!--figure ends-->	
+					</div><!--end of khyber-->
+				</section> <!--end of khyber-->
 				
-				<h2 id="campuses" class="gallery-title">exploring different campuses</h2>
-				<p>
-					I love exploring the different campuses at Rutgers! Each campus has a very distinguishable vibe and offers unique experiences. My personal favorite is the <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/college-avenue-campus" target="_blank">College Ave</a> campus, mostly because there are so many parties and good places to eat there! Below, the first image is from my <a href="./rev1">review</a> of the <a href="https://it.rutgers.edu/new-brunswick/new-brunswick-computer-labs/college-ave-computer-center-lab/" target="_blank">Academic Building East Computer Lab</a>. The second image is of a sticker that I discovered while walking around on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/cook-campus" target="_blank">Cook-Douglas</a> after eating at <a href="https://ifnh.rutgers.edu/harvest.html" target="_blank">Harvest Cafe</a>. The third one was taken on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/busch-campus" target="_blank">Busch Campus</a>, at the <a href="https://prcc.rutgers.edu/" target="_blank">Paul Robe Cultural Center</a>, after a book club meeting with <em>Radical Reads</em>. Click <a href="./map">here</a> to check out more cool spots on different campuses!
-				</p>
+				<section><!--harvest-->
+					<h2 id="harvest" class="gallery-title">phone eats first at harvest cafe</h2>
+					<p>
+						<a href="https://ifnh.rutgers.edu/harvest.html" target="_blank">Harvest Cafe</a> is a cafeteria located on Douglas Campus in the <a href="https://maps.rutgers.edu/#/?click=true&selected=6432" target="_blank">Institute for Food Nutrition and Health</a>. The food here is made fresh and right in front of you! The chefs exhibit their culinary talents here on a daily basis. Harvest offers a wide variety of delicious food from a frequently changing menu, ranging from noodle soups to freshly made smoothies. There are also prepackaged fresh sandwiches that you can take home to enjoy later. One meal swipe can get you an entrée with a side and a drink, or a smoothie with a side. Not only is the food from Harvest Cafe incredibly delicious, it is also quite aesthetically pleasing! The first image is from my first time at Harvest Cafe. I got <a href="https://www.cookwithmanali.com/palak-paneer/" target="_blank">palak paneer</a> as my entrée, with a chocolate cookie as my side and iced coffee to drink. My second meal at Harvest was lentils and rice, with an oatmeal raisin cookie and passion fruit iced tea. During my second visit, I also got the purple sky smoothie, which contains lots of berries and antioxidants.
+					</p>
+					<div class="flex-gallery">
+						
+						<figure>
+							<img src="images/harvest1.jpg" alt="bowl of palak paneer" width="200px"/>
+							<figcaption>harvest cafe meal</figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/harvest2.jpg" alt="bowl of lentils and chicken" width="200px"/>
+							<figcaption>harvest cafe meal</figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/mew-smoothie.jpg" alt="mew next to purple smoothie" width="200px"/>
+							<figcaption>harvest cafe smoothie</figcaption>
+						</figure><!--figure ends-->
+					</div><!--end of harvest-->
+				</section><!--end of harvest-->
+				<nav class="page-nav">
+					<a href="#">back to top</a>
+					<a href="#khyber">khyber photos</a>
+					<a href="#harvest">harvest cafe</a>
+					<a href="#campuses">different campuses</a>
+					<a href="#passpud">passion puddle</a>
+					<a href="#vis">visual essay</a>
+				</nav><!--end of page nav-->				
 
-				<div class="flex-gallery">
-					<figure>
-						<img src="images/comp-mew.jpg" alt="mew on top of a laptop" width="200px"/>
-						<figcaption>mew at  the <a href="./rev1">academic building east</a></figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/bug-sticker.jpg" alt="sticker with animals and plants" width="200px"/>
-						<figcaption>animal sticker found on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/cook-campus" target="_blank">cook doug</a></figcaption>
-					</figure><!--figure ends-->	
-					<figure>
-						<img src="images/mew-radreads.jpeg" alt="radical readings book club group photo with mew at the bottom right" width="200px"/>
-						<figcaption>mew with radical reads book club at the <a href="https://prcc.rutgers.edu/" target="_blank">PRCC</a></figcaption>
-					</figure><!--figure ends-->
-				</div><!--end of small photos-->
-
-				<p>
-					These next four pictures were taken by me, Mew, spontaneously. The first picture below was taken near the <a href="https://www.campusreel.org/colleges/rutgers-university-new-brunswick/places/allison-road-classroom-building" target="_blank">Allison Road Classroom</a> building on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/busch-campus" target="_blank">Busch Campus</a>. As I was crossing the street, noticed the Hello Kitty sticker and snapped a quick picture of it. The second one was taken at the <a href="https://aacc.rutgers.edu/node/38" target="_blank">Asian American Cultural Center</a> on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/livingston-campus" target="_blank">Livingston Campus</a>. The movie in the background is <a href="https://www.netflix.com/title/81350338" target="_blank"><em>Badhaai Do</em></a>, a <a href="https://www.netflix.com/" target="_blank">Netflix</a> Original Bollywood rom-com. The third picture was taken in the basement of <a href="https://www.instagram.com/demaresthallevents/" target="_blank">Demarest Hall</a>. In the basement, there is a room covered in random art and these were some of my favorite pieces, which happened to be right next to each other. The last picture was taken at the intersection of Bartlett Street and <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/college-avenue-campus" target="_blank">College Ave</a>. I thought it was interesting that the sign says “Melty Heart Ahead.” 
-				</p>
-				<div class="flex-gallery">
-					<figure>
-						<img src="images/hellokitty-busch.jpg" alt="hello kitty with a palestinian flag sticker on a yellow pole" width="200px"/>
-						<figcaption>hello kitty sticker on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/busch-campus" target="_blank">busch campus</a></figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/mew-aacc.jpg" alt="mew plushie on a table at the aacc" width="200px"/>
-						<figcaption>mew at the <a href="https://aacc.rutgers.edu/" target="_blank">AACC</a> on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/livingston-campus" target="_blank">livingston campus</a></figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/demarest.jpg" alt="graffiti of white rabbbit and snoopy in a yellow puffer jacket" width="200px"/>
-						<figcaption>in the <a href="https://www.instagram.com/demaresthallevents/" target="_blank">demarest hall</a> basement</figcaption>
-					</figure><!--figure ends-->
-					<figure>
-						<img src="images/bartlet-st.jpg" alt="yellow street sign that says melty heart ahead" width="200px"/>
-						<figcaption>bartlett st & <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/college-avenue-campus" target="_blank">college ave</a> intersection</figcaption>
-					</figure><!--figure ends-->
-				</div><!--end of "exploring"-->
-
+				<section><!--exploring other campuses-->
+					<h2 id="campuses" class="gallery-title">exploring different campuses</h2>
+					<p>
+						I love exploring the different campuses at Rutgers! Each campus has a very distinguishable vibe and offers unique experiences. Click <a href="./map">here</a> for interactive map of different locations on and off campus! the My personal favorite campus is the <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/college-avenue-campus" target="_blank">College Ave</a> campus, mostly because there are so many parties and good places to eat there! Below, the first image is from my <a href="./rev1">review</a> of the <a href="https://it.rutgers.edu/new-brunswick/new-brunswick-computer-labs/college-ave-computer-center-lab/" target="_blank">Academic Building East Computer Lab</a>. The second image is of a sticker that I discovered while walking around on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/cook-campus" target="_blank">Cook-Douglas</a> after eating at <a href="https://ifnh.rutgers.edu/harvest.html" target="_blank">Harvest Cafe</a>. The third one was taken on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/busch-campus" target="_blank">Busch Campus</a>, at the <a href="https://prcc.rutgers.edu/" target="_blank">Paul Robe Cultural Center</a>, after a book club meeting with <em>Radical Reads</em>. Click <a href="./map">here</a> to check out more cool spots on different campuses!
+					</p>
+					<div class="flex-gallery">
+						<figure>
+							<img src="images/comp-mew.jpg" alt="mew on top of a laptop" width="200px"/>
+							<figcaption>mew at the <a href="./rev1">academic building east computer lab</a></figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/bug-sticker.jpg" alt="sticker with animals and plants" width="200px"/>
+							<figcaption>animal sticker found on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/cook-campus" target="_blank">cook-douglass</a> campus</figcaption>
+						</figure><!--figure ends-->	
+						<figure>
+							<img src="images/mew-radreads.jpeg" alt="radical readings book club group photo with mew at the bottom right" width="200px"/>
+							<figcaption>mew with radical reads book club at the <a href="https://prcc.rutgers.edu/" target="_blank">PRCC</a></figcaption>
+						</figure><!--figure ends-->
+					</div><!--end of small photos-->
+					<p>
+						These next four pictures were taken by me, Mew, spontaneously. The first picture below was taken near the <a href="https://www.campusreel.org/colleges/rutgers-university-new-brunswick/places/allison-road-classroom-building" target="_blank">Allison Road Classroom</a> building on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/busch-campus" target="_blank">Busch Campus</a>. As I was crossing the street, noticed the Hello Kitty sticker and snapped a quick picture of it. The second one was taken at the <a href="https://aacc.rutgers.edu/node/38" target="_blank">Asian American Cultural Center</a> on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/livingston-campus" target="_blank">Livingston Campus</a>. The movie in the background is <a href="https://www.netflix.com/title/81350338" target="_blank"><em>Badhaai Do</em></a>, a <a href="https://www.netflix.com/" target="_blank">Netflix</a> Original Bollywood rom-com. The third picture was taken in the basement of <a href="https://www.instagram.com/demaresthallevents/" target="_blank">Demarest Hall</a>. In the basement, there is a room covered in random art and these were some of my favorite pieces, which happened to be right next to each other. The last picture was taken at the intersection of Bartlett Street and <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/college-avenue-campus" target="_blank">College Ave</a>. I thought it was interesting that the sign says “Melty Heart Ahead.” 
+					</p>
+					<div class="flex-gallery" id="exploring">
+						<figure>
+							<img src="images/hellokitty-busch.jpg" alt="hello kitty with a palestinian flag sticker on a yellow pole" />
+							<figcaption>hello kitty sticker on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/busch-campus" target="_blank">busch campus</a></figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/mew-aacc.jpg" alt="mew plushie on a table at the aacc" />
+							<figcaption>mew at the <a href="https://aacc.rutgers.edu/" target="_blank">AACC</a> on <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/livingston-campus" target="_blank">livingston campus</a></figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/demarest.jpg" alt="graffiti of white rabbbit and snoopy in a yellow puffer jacket" />
+							<figcaption>in the <a href="https://www.instagram.com/demaresthallevents/" target="_blank">demarest hall</a> basement</figcaption>
+						</figure><!--figure ends-->
+						<figure>
+							<img src="images/bartlet-st.jpg" alt="yellow street sign that says melty heart ahead" />
+							<figcaption>bartlett st & <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/college-avenue-campus" target="_blank">college ave</a> intersection</figcaption>
+						</figure><!--figure ends-->
+					</div><!--end of "exploring"-->
+				</section><!--end of exploring-->
+				
 			</div><!--ends of gallery-->
 
-			<p>
+			<section><!--mew tree-->
+				<p>
 				Oshawott captured this awesome picture of me resting in the nook of a tree at one of my favorite spots to hang out on campus: <a href="https://grid.rutgers.edu/voorhees-mall-xr-campus-tour" target="_blank">Voorhees Mall</a>. The large grassy area with climbable trees is the perfect spot to hang out with friends when the weather is slightly warmer than usual! 
 			</p>
 			
@@ -140,71 +202,169 @@
 				<img src="images/mew-tree.jpeg" alt="mew resting on a tree branch"  id="mew-tree"/>
 				<figcaption id="mew-tree">mew resting on a tree in <a href="https://grid.rutgers.edu/voorhees-mall-xr-campus-tour" target="_blank">voorhees mall</a></figcaption>
 			</figure><!--figure ends-->	
+			</section><!--end of mew tree-->
+			<nav class="page-nav">
+				<a href="#">back to top</a>
+				<a href="#khyber">khyber photos</a>
+				<a href="#harvest">harvest cafe</a>
+				<a href="#campuses">different campuses</a>
+				<a href="#passpud">passion puddle</a>
+				<a href="#vis">visual essay</a>
+			</nav><!--end of page nav-->
+						
+			<section><!--passion puddle-->
+				<h2 id="passpud">photos from passion puddle</h2>
+				<p>
+					<a href="https://www.rutgers.edu/news/rutgers-passion-puddle-among-americas-most-romantic-college-spots" target="_blank">Passion Puddle</a> is a quaint pond right by the Red Oak Lane bus stop on the <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/cook-campus" target="_blank">Cook-Douglas</a> Campus. It is a scenic spot to enjoy nice weather and observe wild life. <a href="https://www.collegeranker.com/most-romantic-college-traditions/" target="_blank">College Ranker</a> ranked Passion Puddle at sixth place out of the top 25 most romantic spots on an American college campus. Legend has it that if you if you walk around the pond three times while holding hands with someone, you will fall in love with someone. The legend originated with specifically a man from <a href="https://catalogs.rutgers.edu/generated/nb-ug_0507/pg21608.html" target="_blank">Cook College</a> and a woman from <a href="https://douglass.rutgers.edu/news/100-years-douglass-college" target="_blank">Douglas College</a> in mind, and alleged that they would get married and live happily ever after. 
+				</p>
+				<p>
+					Interestingly, Douglas College first started out as the New Jersey College Women in 1918 with 54 students and 12 books in its library. In 2007, it was renamed as <a href="https://douglass.rutgers.edu/" target="_blank">Douglas <em>Residential</em> College</a>. Additionally, Cook College was renamed as the <a href="https://sebs.rutgers.edu/" target="_blank">School of Environmental and Biological Sciences (SEBS)</a>. Thus throughout the years, the narrative on  the romance of Passion Puddle has shifted to include couples at Rutgers that are not just a man from the obsolete Cook College and a woman from Douglas College. 
+				</p>
+				<div class="flex-gallery"><!--passion puddle photos-->
+					<figure>
+							<img src="images/passpud.jpeg" alt="passion puddle" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					<figure>
+							<img src="images/passpud-gallery/right-half.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					<figure>
+							<img src="images/passpud-gallery/fountain.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
 
-			<h2 id="passpud">photos from passion puddle</h2>
-			<p>
-				<a href="https://www.rutgers.edu/news/rutgers-passion-puddle-among-americas-most-romantic-college-spots" target="_blank">Passion Puddle</a> is a quaint pond right by the Red Oak Lane bus stop on the <a href="https://newbrunswick.rutgers.edu/discover-rutgers/explore-our-spaces/cook-campus" target="_blank">Cook-Douglas</a> Campus. It is a scenic spot to enjoy nice weather and observe wild life. <a href="https://www.collegeranker.com/most-romantic-college-traditions/" target="_blank">College Ranker</a> ranked Passion Puddle at sixth place out of the top 25 most romantic spots on an American college campus. Legend has it that if you if you walk around the pond three times while holding hands with someone, you will fall in love with someone. The legend originated with specifically a man from <a href="https://catalogs.rutgers.edu/generated/nb-ug_0507/pg21608.html" target="_blank">Cook College</a> and a woman from <a href="https://douglass.rutgers.edu/news/100-years-douglass-college" target="_blank">Douglas College</a> in mind, and alleged that they would get married and live happily ever after. 
-			</p>
-			<p>
-				Interestingly, Douglas College first started out as the New Jersey College Women in 1918 with 54 students and 12 books in its library. In 2007, it was renamed as <a href="https://douglass.rutgers.edu/" target="_blank">Douglas <em>Residential</em> College</a>. Additionally, Cook College was renamed as the <a href="https://sebs.rutgers.edu/" target="_blank">School of Environmental and Biological Sciences (SEBS)</a>. Thus throughout the years, the narrative on  the romance of Passion Puddle has shifted to include couples at Rutgers that are not just a man from the obsolete Cook College and a woman from Douglas College. 
-			</p>
-			<div class="flex-gallery"><!--passion puddle photos-->
-				<figure>
-						<img src="images/passpud.jpeg" alt="passion puddle" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				<figure>
-						<img src="images/passpud-gallery/right-half.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				<figure>
-						<img src="images/passpud-gallery/fountain.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
+					<figure>
+							<img src="images/passpud-gallery/pink-tree-pp.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					<figure>
+							<img src="images/passpud-gallery/pink-shore2.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					<figure>
+							<img src="images/passpud-gallery/vtree.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
 
-				<figure>
-						<img src="images/passpud-gallery/pink-tree-pp.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				<figure>
-						<img src="images/passpud-gallery/pink-shore2.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
+					<figure>
+							<img src="images/passpud-gallery/watermoss.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					<figure>
+							<img src="images/passpud-gallery/chairs.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					<figure>
+							<img src="images/passpud-gallery/turtle.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					
 
-				<figure>
-						<img src="images/passpud-gallery/vtree.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				<figure>
-						<img src="images/passpud-gallery/watermoss.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				<figure>
-						<img src="images/passpud-gallery/chairs.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				
+					<figure>
+							<img src="images/passpud-gallery/tall-tree.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure><figure>
+							<img src="images/passpud-gallery/sign1.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure><figure>
+							<img src="images/passpud-gallery/sign2.jpeg" alt="picture" width="200px"/>
+							<figcaption></figcaption>
+					</figure>
+					
 
-				<figure>
-						<img src="images/passpud-gallery/tall-tree.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure><figure>
-						<img src="images/passpud-gallery/sign1.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure><figure>
-						<img src="images/passpud-gallery/sign2.jpeg" alt="picture" width="200px"/>
-						<figcaption></figcaption>
-				</figure>
-				
+				</div>
+				<figure class="center">
+					<img src="images/passpud-gallery/turtle1.jpeg" alt="turtle on a log in the middle of a pond"  id="turtle"/>
+					<figcaption id="turtle"></figcaption>
+				</figure><!--figure ends-->	
+			</section><!--end of passion puddle-->
+			<nav class="page-nav">
+				<a href="#">back to top</a>
+				<a href="#khyber">khyber photos</a>
+				<a href="#harvest">harvest cafe</a>
+				<a href="#campuses">different campuses</a>
+				<a href="#passpud">passion puddle</a>
+				<a href="#vis">visual essay</a>
+			</nav><!--end of page nav-->
 
-			</div>
-			<figure class="center">
-				<img src="images/passpud-gallery/turtle.jpeg" alt="turtle on a log in the middle of a pond"  id="turtle"/>
-				<figcaption id="turtle"></figcaption>
-			</figure><!--figure ends-->	
 		</section><!--showcase ends-->
 
-		<section>
+		<section> <!--visual essay-->
+			<h2 id="vis">visual essay preview...</h2>
+			<p>
+				The visual essay showcases the beauty of the nature the sprouts up through out the somewhat <a href="https://www.niche.com/places-to-live/new-brunswick-middlesex-nj/" target="_blank">urban</a> environment of <a href="https://newbrunswick.rutgers.edu/" target="_blank">Rutgers-New Brunswick</a>. Most of these trees are surrounded by large buildings, where other trees and plants once stood. The placement of these trees is planned and particular. Yet despite the oddly ironic unnatural circumstances of the trees on campus, the presence of them provides a refreshing reminder of nature. 
+			</p>
+			<div class="grid-pola">
+              <div class="pola-col-container">
+                  <div class="polaroid rotate_right">
+                    <img src="images/mew-tree.jpeg" alt="mew in a tree" width="284" height="213">
+                    <p class="pola-cap">
+                        mew in a tree at voorhees mall
+                    </p>
+                  </div><!--end of polaroid 1-->
+                  <div class="polaroid rotate_left">
+                      <img src="images/trees/voorhees-trees-1.jpg" alt="pink trees in voorhees mall" width="284" height="213">
+                      <p class="pola-cap">
+                          pink trees at voorhees
+                      </p>
+                  </div><!--end of polaroid 2-->     
+              </div><!--polaroid column container div 1 ends-->
+              <div class="pola-col-container">
+                  <div class="polaroid rotate_left">
+                      <img src="images/trees/climbing-tree.jpg" alt="two friends climbing a tree" width="284" height="213">
+                      <p class="pola-cap">
+                          climbing heart shaped trees at voorhees mall
+                      </p>
+                  </div><!--end of polaroid 3-->
+                  <div class="polaroid rotate_right">
+                      <img src="images/trees/casc-tree.png" alt="pink trees in voorhees mall" width="284" height="213">
+                      <p class="pola-cap">
+                          pink tree by college ave student center
+                      </p>
+                  </div><!--end of polaroid 4-->     
+              </div><!--polaroid column container div 2 ends-->
+              <div class="pola-col container">
+                <div class="polaroid rotate_right">
+                      <img src="images/trees/snow-tree.jpg" alt="image of snow covered trees" width="284" height="213">
+                      <p class="pola-cap">
+                          snowy trees on busch campus
+                      </p>
+                  </div><!--end of polaroid 5-->
+                  <div class="polaroid rotate_left">
+                      <img src="images/trees/abwest-tree.jpg" alt="image of pink tree" width="284" height="213">
+                      <p class="pola-cap">
+                          pink tree by academic building west
+                      </p>
+                  </div><!--end of polaroid 6-->
+              </div><!--polaroid container div 3 ends-->
+               <div class="pola-col container">
+                <div class="polaroid rotate_left">
+                      <img src="images/trees/cd-tree3.jpg" alt="image of a bunch of trees" width="284" height="213">
+                      <p class="pola-cap">
+                          trees on cook douglass
+                      </p>
+                  </div><!--end of polaroid 5-->
+                  <div class="polaroid rotate_right">
+                      <img src="images/trees/cd-tree1.jpg" alt="image of a tree" width="284" height="213">
+                      <p class="pola-cap">
+                          tree on cook douglass
+                      </p>
+                  </div><!--end of polaroid 6-->
+              </div><!--polaroid container div 4 ends-->
+            </div><!--end of polaroid grid-->
+		</section><!--visual essay ends-->
+		
+		<nav class="page-nav">
+			<a href="#">back to top</a>
+			<a href="#khyber">khyber photos</a>
+			<a href="#harvest">harvest cafe</a>
+			<a href="#campuses">different campuses</a>
+			<a href="#passpud">passion puddle</a>
+			<a href="#vis">visual essay</a>
+		</nav><!--end of page nav-->
+
+		<section><!--oshawott-->
 			<h2>Our Photographer—Oshawott</h2>
 			<figure class="alignleft">
 				<img src="images/oshawott.jpg" alt="oshawott" height="195px" class="rcorners"/>
@@ -217,10 +377,7 @@
 		
 		<nav class="page-nav">
 			<a href="#">back to top</a>
-			<a href="#khyber">khyber photos</a>
-			<a href="#harvest">harvest cafe</a>
-			<a href="#campuses">different campuses</a>
-			<a href="#passpud">passion puddle</a>
+			<a href="./essay">full visual essay</a>
 		</nav><!--end of page nav-->
 
 	</main><!--main ends-->

@@ -15,11 +15,52 @@
 		<nav class="site-nav flex">
 			<a href="./"><h2>RU MEW</h2></a>
 			<a href="./">home</a>
-			<a href="./reviews">reviews</a>
-			<a href="./gallery">gallery</a>
-			<a href="./about">about</a>
 			<div class="dropdown">
-				<span><a href="./extra">extra</a></span>
+				<span><a href="./reviews">mew reviews</a></span>
+				<div class="dropdown-content">
+					<a href="./rev1">first review</a>
+					<a href="./rev2">latest review</a>
+					<a href="./reviews#micros">mirco-reviews</a>
+				</div>
+			</div><!--end of 'reviews'-->
+			<div class="dropdown">
+				<span><a href="./gallery">photography</a></span>
+				<div class="dropdown-content">
+					<a href="./gallery">gallery</a>
+					<a href="./essay">visual essay</a>
+				</div>
+			</div><!--end of 'photos'--> 
+			
+			<div class="dropdown">
+				<span><a href="./about">about us</a></span>
+				<div class="dropdown-content">
+					<div class="nested-dropdown">
+						<span><a href="#what">what is ru mew?</a></span>
+						<div class="nested-dropdown-content">
+							<a href="#history">history</a>
+							<a href="#why">why ru mew?</a>
+						</div>
+					</div><!--end of 'what' dropdown-->
+					<div class="nested-dropdown">
+						<span><a href="#team">meet our team</a></span>
+						<div class="nested-dropdown-content">
+							<a href="#mew">mew</a>
+							<a href="#oshawott">oshawott</a>
+							<a href="#jirachi">jirachi</a>
+							<a href="#snorlax">snorlax</a>
+						</div>
+					</div><!--end of 'our team' dropdown-->
+					<div class="nested-dropdown">
+						<span><a href="#collabs">collabs</a></span>
+						<div class="nested-dropdown-content">
+							<a href="#steve">sheriff steve</a>
+							<a href="#connie">connie the cat</a>
+						</div>
+					</div><!--end of 'collabs' dropdown-->
+				</div>
+			</div><!--end of 'about'-->
+			<div class="dropdown">
+				<span><a href="./extra">more mew</a></span>
 				<div class="dropdown-content">
 					<a href="./extra">mewvie</a>
 					<a href="./map">map</a>
@@ -44,8 +85,17 @@
 		<section class="ru-title">
 			<img src="images/SVG/rumew.svg" height="100px" alt="large red letters spelling out RU Mew" class="aligncenter">
 			<p class="credit center">mew image via <a href="https://www.pngmart.com/image/377265" target="_blank">PNG mart</a></p>
-			<h1 class="main-header">explore the site!</h1>
+			<h1 class="main-header">what us RU Mew!</h1>
 		</section>
+
+		<h4 class="subheader">Excellent Question...</h4>
+		<p>
+			<a href="./">RU Mew</a> is a collaborative project that combines the talents of a <a href="./about#team">team</a> of passionate and dedicated individuals, each with their own unique skills and expertise. The project is focused on developing engaging and immersive content that provides insight into the world of <a href="https://newbrunswick.rutgers.edu/" target="_blank">Rutgers University-New Brunswick</a>, as told from my perspective as the <a href="./about#mew">author and creator, Mew</a>.
+			<br><br>
+			At the heart of RU Mew is the belief in the power of storytelling. Our goal is to construct narratives through the <a href="./reviews">Mew Reviews</a> that encapsulate the essence of being here at the largest college in New Jersey. Whether it's through the <a href="./gallery">vivid images</a> captured by our talented <a href="./about#oshawott">photographer Oshawott</a>, the aesthetically pleasing and user-friendly site brought to life by our <a href="./about#jirachi">web designer Jirachi</a>, or the eloquently articulated content refined by our meticulous <a href="./about#snorlax">editor Snorlax</a>, every element of our work is thoughtfully crafted to tell a story.
+		</p><!--end of 'what' p-->
+
+		<h1 class="main-header">explore the site!</h1>
 
 		<section class="showcase">
 
@@ -54,7 +104,7 @@
 				<div class="showcase-item">
 					<a href="./about"><h2>about</h2></a>
 					<figure>
-						<img src="images/mew-small.png" alt="mew" height="150px">
+						<img src="images/mew-small.png" alt="mew">
 						<figcaption class="credit">image by <a href="https://www.deviantart.com/tails19950/gallery" target="_blank">Tails19950</a> via <a href="https://www.deviantart.com/tails19950/art/151-Mew-v-2-202081436" target="_blank">deviant art</a></figcaption>
 						<figcaption>learn more about us</figcaption>
 					</figure>
@@ -64,7 +114,7 @@
 					<a href="./reviews"><h2>reviews</h2>
 					</a>
 					<figure>
-						<img  src="images/latte.png" alt="cartoon latte with a smiley face on the mug" height="150px">
+						<img  src="images/latte.png" alt="cartoon latte with a smiley face on the mug">
 						<figcaption class="credit">image by <a href="https://pngtree.com/divyadaddy_30938153?type=1" target="_blank">Divyadaddy</a> via <a href="https://pngtree.com/freepng/coffee-latte-cartoon_8442013.html" target="_blank">PNGtree</a></figcaption>
 						<figcaption>read the <a href="./rev2">latest review</a>!</figcaption>
 					</figure>
@@ -74,7 +124,7 @@
 					<a href="./gallery"><h2>gallery</h2>
 					</a>
 					<figure>
-							<img src="images/camera.png" alt="cartoon polaroid camera" height="115px" id="cam-photo">
+							<img src="images/camera.png" alt="cartoon polaroid camera" id="cam-photo">
 							<figcaption class="credit">image by <a href="https://www.cleanpng.com/users/@monzale.html" target="_blank">monzale</a> via <a href="https://www.cleanpng.com/png-instant-camera-polaroid-corporation-photography-ca-667145/" target="_blank">CleanPNG</a></figcaption>
 							<figcaption>browse our photos</figcaption>
 					</figure>
@@ -82,14 +132,14 @@
 				
 			</div><!--showcase container ends-->
 			
-		</section><!---->
-		<h1 class="main-header">What is RU Mew?</h1>
-		<h4 class="subheader">Excellent Question...</h4>
-		<p>
-			RU Mew is a collaborative project that combines the talents of a team of passionate and dedicated individuals, each with their own unique skills and expertise. The project is focused on developing engaging and immersive content that provides insight into the world of Rutgers University-New Brunswick, as told from my perspective as the <a href="./about#mew">author and creator, Mew</a>.
-			<br><br>
-			At the heart of RU Mew is the belief in the power of storytelling. Our goal is to construct narratives through the Mew Reviews that encapsulate the essence of being here at the largest college in New Jersey. Whether it's through the vivid images captured by our talented <a href="./about#oshawott">photographer Oshawott</a>, the aesthetically pleasing and user-friendly site brought to life by our <a href="./about#jirachi">web designer Jirachi</a>, or the eloquently articulated content refined by our meticulous <a href="./about#snorlax">editor Snorlax</a>, every element of our work is thoughtfully crafted to tell a story.
-		</p><!--end of 'what' p-->
+		</section><!--end of show case-->
+		<nav class="page-nav">
+			<a href="#">back to top</a>
+		</nav>
+		<br>
+		<figure class="center">
+			<img src="images/mew-tree.jpeg" alt="mew resting on a tree branch"  id="mew-tree"/>
+		</figure><!--figure ends-->	
 	</main><!--main ends-->
 	
 	</div><!--wrapper ends-->
