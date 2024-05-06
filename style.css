@@ -545,7 +545,7 @@ img.alignleft {
 }
 
 #mew-tree, #turtle, .vis-ess img{
-  max-width: 900px;
+  width: 100%;
 }
 @media (max-width: 800px) {
   .flex-gallery{
@@ -573,14 +573,7 @@ img.alignleft {
 #turtle{
   padding-top: 10px;
 }
-.gallery-title {
 
-}
-@media (max-width: 800px) {
-  #mew-tree, #turtle, .vis-ess img {
-    max-width: 100%;
-  }
-}
 table, th, td{
   border: 1px solid black;
 }
