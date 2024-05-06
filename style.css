@@ -76,14 +76,6 @@ footer p {
   text-align: center;
 }
 /*headers*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Franklin Gothic Bold", "Arial Black";
-}
 h1 {
   text-align: center;
   font-size: 45px;
@@ -105,8 +97,6 @@ h1 {
   text-align: center;
   color: #656565;
   font-style: italic;
-  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times,
-    "Times New Roman", "serif";
 }
 .main-header {
   font-size: 50px;
@@ -663,8 +653,6 @@ p.pola-cap {
   padding: 0;
   line-height: 150%;
   text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 .pola-col-container {
   max-width: 400px;
