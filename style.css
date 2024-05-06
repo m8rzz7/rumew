@@ -562,8 +562,8 @@ img.alignleft {
 }
 @media (max-width: 800px) {
   .flex-gallery figure {
-  width: 200px;
-  height: auto;
+    width: 200px;
+    height: auto;
   }
   .flex-gallery figure img, .flex-gallery figure figcaption {
     width: 200px;
@@ -692,3 +692,14 @@ em.green{
   color:darkolivegreen;
 }
 /* extra page CSS */
+iframe{
+  width: 100%;
+  aspect-ratio: auto 1 / 0.5625;
+  height: auto;
+}
+/*media (max-width: 800px) {
+  iframe{
+    width: 560px;
+    height: 315px;
+  }
+}
