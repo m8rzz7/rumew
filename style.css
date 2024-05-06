@@ -298,8 +298,8 @@ p {
 .pic-para {
   display: block;
 }
-#mew-em {
-  color: cornflowerblue;
+.mew-em {
+  color: rgb(240, 122, 179);
 }
 .review-micro {
   grid-column: 3;
@@ -581,7 +581,26 @@ img.alignleft {
     max-width: 100%;
   }
 }
-
+table, th, td{
+  border: 1px solid black;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: center;
+  background-color: #1e718e;
+  color: beige;
+  font-weight: bold;
+}
+td{
+  padding: 5px;
+}
+.fa-star, .fa-star-half-stroke{
+  color: rgb(244, 227, 72);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 /*interactive map CSS*/
 #map-div{
   width: 100%;
@@ -612,12 +631,27 @@ img.alignleft {
 }
 
 /* visual essay CSS */
-div.polaroid {
-  width: 284px;
-  padding: 10px 10px 20px 10px;
+.polaroid {
+  width: 250px;
+  padding: 10px 10px 10px 10px;
   border: 1px solid #bfbfbf;
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
+}
+.polaroid img{
+  width: 251px;
+}
+
+@media (max-width: 800px){
+  .polaroid {
+    width: 283px;
+    padding: 10px 10px 20px 10px;
+  }
+  .polaroid img{
+    width: 283px;
+    height: 213px;
+  }
+
 }
 
 div.rotate_right {
@@ -642,9 +676,11 @@ p.pola-cap {
 .pola-col-container {
   max-width: 400px;
 }
-.grid-pola {
-  display: grid;
-  grid-template-columns: auto auto;
+.flex-pola {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  align-content:space-around;
 }
 
 em.red{
